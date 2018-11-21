@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F44812F721A5F68900B6F418 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44812F621A5F68900B6F418 /* AppDelegate.swift */; };
+		F44812F921A5F68900B6F418 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F44812F821A5F68900B6F418 /* GameScene.sks */; };
+		F44812FB21A5F68900B6F418 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F44812FA21A5F68900B6F418 /* Actions.sks */; };
+		F44812FD21A5F68900B6F418 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44812FC21A5F68900B6F418 /* GameScene.swift */; };
+		F44812FF21A5F68900B6F418 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44812FE21A5F68900B6F418 /* GameViewController.swift */; };
+		F448130221A5F68900B6F418 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F448130021A5F68900B6F418 /* Main.storyboard */; };
+		F448130421A5F68900B6F418 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F448130321A5F68900B6F418 /* Assets.xcassets */; };
+		F448130721A5F68900B6F418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F448130521A5F68900B6F418 /* LaunchScreen.storyboard */; };
+		F448131221A5F68A00B6F418 /* PanzerKriegTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F448131121A5F68A00B6F418 /* PanzerKriegTests.swift */; };
+		F448131D21A5F68A00B6F418 /* PanzerKriegUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F448131C21A5F68A00B6F418 /* PanzerKriegUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F448130E21A5F68A00B6F418 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F44812EB21A5F68900B6F418 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F44812F221A5F68900B6F418;
+			remoteInfo = PanzerKrieg;
+		};
+		F448131921A5F68A00B6F418 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F44812EB21A5F68900B6F418 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F44812F221A5F68900B6F418;
+			remoteInfo = PanzerKrieg;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F44812F321A5F68900B6F418 /* PanzerKrieg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanzerKrieg.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44812F621A5F68900B6F418 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F44812F821A5F68900B6F418 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		F44812FA21A5F68900B6F418 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		F44812FC21A5F68900B6F418 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		F44812FE21A5F68900B6F418 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		F448130121A5F68900B6F418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F448130321A5F68900B6F418 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F448130621A5F68900B6F418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F448130821A5F68900B6F418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F448130D21A5F68A00B6F418 /* PanzerKriegTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanzerKriegTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F448131121A5F68A00B6F418 /* PanzerKriegTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanzerKriegTests.swift; sourceTree = "<group>"; };
+		F448131321A5F68A00B6F418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F448131821A5F68A00B6F418 /* PanzerKriegUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanzerKriegUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F448131C21A5F68A00B6F418 /* PanzerKriegUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanzerKriegUITests.swift; sourceTree = "<group>"; };
+		F448131E21A5F68A00B6F418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F44812F021A5F68900B6F418 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F448130A21A5F68A00B6F418 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F448131521A5F68A00B6F418 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F44812EA21A5F68900B6F418 = {
+			isa = PBXGroup;
+			children = (
+				F44812F521A5F68900B6F418 /* PanzerKrieg */,
+				F448131021A5F68A00B6F418 /* PanzerKriegTests */,
+				F448131B21A5F68A00B6F418 /* PanzerKriegUITests */,
+				F44812F421A5F68900B6F418 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F44812F421A5F68900B6F418 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F44812F321A5F68900B6F418 /* PanzerKrieg.app */,
+				F448130D21A5F68A00B6F418 /* PanzerKriegTests.xctest */,
+				F448131821A5F68A00B6F418 /* PanzerKriegUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F44812F521A5F68900B6F418 /* PanzerKrieg */ = {
+			isa = PBXGroup;
+			children = (
+				F44812F621A5F68900B6F418 /* AppDelegate.swift */,
+				F44812F821A5F68900B6F418 /* GameScene.sks */,
+				F44812FA21A5F68900B6F418 /* Actions.sks */,
+				F44812FC21A5F68900B6F418 /* GameScene.swift */,
+				F44812FE21A5F68900B6F418 /* GameViewController.swift */,
+				F448130021A5F68900B6F418 /* Main.storyboard */,
+				F448130321A5F68900B6F418 /* Assets.xcassets */,
+				F448130521A5F68900B6F418 /* LaunchScreen.storyboard */,
+				F448130821A5F68900B6F418 /* Info.plist */,
+			);
+			path = PanzerKrieg;
+			sourceTree = "<group>";
+		};
+		F448131021A5F68A00B6F418 /* PanzerKriegTests */ = {
+			isa = PBXGroup;
+			children = (
+				F448131121A5F68A00B6F418 /* PanzerKriegTests.swift */,
+				F448131321A5F68A00B6F418 /* Info.plist */,
+			);
+			path = PanzerKriegTests;
+			sourceTree = "<group>";
+		};
+		F448131B21A5F68A00B6F418 /* PanzerKriegUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F448131C21A5F68A00B6F418 /* PanzerKriegUITests.swift */,
+				F448131E21A5F68A00B6F418 /* Info.plist */,
+			);
+			path = PanzerKriegUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F44812F221A5F68900B6F418 /* PanzerKrieg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F448132121A5F68A00B6F418 /* Build configuration list for PBXNativeTarget "PanzerKrieg" */;
+			buildPhases = (
+				F44812EF21A5F68900B6F418 /* Sources */,
+				F44812F021A5F68900B6F418 /* Frameworks */,
+				F44812F121A5F68900B6F418 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PanzerKrieg;
+			productName = PanzerKrieg;
+			productReference = F44812F321A5F68900B6F418 /* PanzerKrieg.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F448130C21A5F68A00B6F418 /* PanzerKriegTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F448132421A5F68A00B6F418 /* Build configuration list for PBXNativeTarget "PanzerKriegTests" */;
+			buildPhases = (
+				F448130921A5F68A00B6F418 /* Sources */,
+				F448130A21A5F68A00B6F418 /* Frameworks */,
+				F448130B21A5F68A00B6F418 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F448130F21A5F68A00B6F418 /* PBXTargetDependency */,
+			);
+			name = PanzerKriegTests;
+			productName = PanzerKriegTests;
+			productReference = F448130D21A5F68A00B6F418 /* PanzerKriegTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F448131721A5F68A00B6F418 /* PanzerKriegUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F448132721A5F68A00B6F418 /* Build configuration list for PBXNativeTarget "PanzerKriegUITests" */;
+			buildPhases = (
+				F448131421A5F68A00B6F418 /* Sources */,
+				F448131521A5F68A00B6F418 /* Frameworks */,
+				F448131621A5F68A00B6F418 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F448131A21A5F68A00B6F418 /* PBXTargetDependency */,
+			);
+			name = PanzerKriegUITests;
+			productName = PanzerKriegUITests;
+			productReference = F448131821A5F68A00B6F418 /* PanzerKriegUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F44812EB21A5F68900B6F418 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Johannes Conradi";
+				TargetAttributes = {
+					F44812F221A5F68900B6F418 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F448130C21A5F68A00B6F418 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F44812F221A5F68900B6F418;
+					};
+					F448131721A5F68A00B6F418 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F44812F221A5F68900B6F418;
+					};
+				};
+			};
+			buildConfigurationList = F44812EE21A5F68900B6F418 /* Build configuration list for PBXProject "PanzerKrieg" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F44812EA21A5F68900B6F418;
+			productRefGroup = F44812F421A5F68900B6F418 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F44812F221A5F68900B6F418 /* PanzerKrieg */,
+				F448130C21A5F68A00B6F418 /* PanzerKriegTests */,
+				F448131721A5F68A00B6F418 /* PanzerKriegUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F44812F121A5F68900B6F418 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F448130221A5F68900B6F418 /* Main.storyboard in Resources */,
+				F44812F921A5F68900B6F418 /* GameScene.sks in Resources */,
+				F448130421A5F68900B6F418 /* Assets.xcassets in Resources */,
+				F448130721A5F68900B6F418 /* LaunchScreen.storyboard in Resources */,
+				F44812FB21A5F68900B6F418 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F448130B21A5F68A00B6F418 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F448131621A5F68A00B6F418 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F44812EF21A5F68900B6F418 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44812FD21A5F68900B6F418 /* GameScene.swift in Sources */,
+				F44812FF21A5F68900B6F418 /* GameViewController.swift in Sources */,
+				F44812F721A5F68900B6F418 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F448130921A5F68A00B6F418 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F448131221A5F68A00B6F418 /* PanzerKriegTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F448131421A5F68A00B6F418 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F448131D21A5F68A00B6F418 /* PanzerKriegUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F448130F21A5F68A00B6F418 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F44812F221A5F68900B6F418 /* PanzerKrieg */;
+			targetProxy = F448130E21A5F68A00B6F418 /* PBXContainerItemProxy */;
+		};
+		F448131A21A5F68A00B6F418 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F44812F221A5F68900B6F418 /* PanzerKrieg */;
+			targetProxy = F448131921A5F68A00B6F418 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F448130021A5F68900B6F418 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F448130121A5F68900B6F418 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F448130521A5F68900B6F418 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F448130621A5F68900B6F418 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F448131F21A5F68A00B6F418 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F448132021A5F68A00B6F418 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F448132221A5F68A00B6F418 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PanzerKrieg/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PanzerKrieg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F448132321A5F68A00B6F418 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PanzerKrieg/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PanzerKrieg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F448132521A5F68A00B6F418 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PanzerKriegTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PanzerKriegTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PanzerKrieg.app/PanzerKrieg";
+			};
+			name = Debug;
+		};
+		F448132621A5F68A00B6F418 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PanzerKriegTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PanzerKriegTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PanzerKrieg.app/PanzerKrieg";
+			};
+			name = Release;
+		};
+		F448132821A5F68A00B6F418 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PanzerKriegUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PanzerKriegUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PanzerKrieg;
+			};
+			name = Debug;
+		};
+		F448132921A5F68A00B6F418 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PanzerKriegUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PanzerKriegUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PanzerKrieg;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F44812EE21A5F68900B6F418 /* Build configuration list for PBXProject "PanzerKrieg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F448131F21A5F68A00B6F418 /* Debug */,
+				F448132021A5F68A00B6F418 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F448132121A5F68A00B6F418 /* Build configuration list for PBXNativeTarget "PanzerKrieg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F448132221A5F68A00B6F418 /* Debug */,
+				F448132321A5F68A00B6F418 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F448132421A5F68A00B6F418 /* Build configuration list for PBXNativeTarget "PanzerKriegTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F448132521A5F68A00B6F418 /* Debug */,
+				F448132621A5F68A00B6F418 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F448132721A5F68A00B6F418 /* Build configuration list for PBXNativeTarget "PanzerKriegUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F448132821A5F68A00B6F418 /* Debug */,
+				F448132921A5F68A00B6F418 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F44812EB21A5F68900B6F418 /* Project object */;
+}
