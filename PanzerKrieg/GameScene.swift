@@ -9,8 +9,9 @@
 import SpriteKit
 import GameplayKit
 
+
 class GameScene: SKScene, SKPhysicsContactDelegate {
-    
+    var gameScene : GameScene!
     enum GameState {
         case aiming, powering, shooting
     }
@@ -30,9 +31,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     //let playerleft = SKSpriteNode(imageNamed: "playerleft")
     // let playerright = SKSpriteNode(imageNamed: "playerright")
     
+    
+    
+    
+    var fingerlocation = CGPoint()
+    
+    var grids = true
+
+    var ground = SKShapeNode()
+    
     class player {
-        var GameScene : GameScene!
         
+
         let grids = true
         
         var radians : CGFloat = 0
@@ -73,40 +83,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             bBullet.physicsBody?.affectedByGravity = true
             bBullet.physicsBody?.isDynamic = true
         }
-        func fire(angle: Double, vel: Double){
-            setBullet()
-            GameScene.addChild(bBullet)
-            let x = vel * cos(angle)
-            let y = vel * sin(angle)
-            let shotVec = CGVector(dx: x, dy: y)
-            bBullet.physicsBody?.applyImpulse(shotVec)
-            
-            let wait4 = SKAction.wait(forDuration: 4)
-            let reset = SKAction.run({
-                self.setBullet()
-            })
-            self.bBullet.run(SKAction.sequence([wait4, reset]))
-        }
-        func setArrow() {
-            arrow.setScale(0.5)
-            arrow.anchorPoint = CGPoint(x:0.5,y: 0)
-            arrow.position = CGPoint(x: self.tank.position.x, y: self.tank.position.y)
-            arrow.zPosition = 1
-            GameScene.addChild(arrow)
-        }
+        
+        
         
     }
-    
-    
-    
-    
-    var fingerlocation = CGPoint()
-    
-    var grids = true
-    
-    var ground = SKShapeNode()
-    
-    
+
     
     
     var one: player = player()
@@ -142,8 +123,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        setArrow(player: one)
         for touch: AnyObject in touches {
             fingerlocation = touch.location(in: self)
+            
         }
         
     }
@@ -154,7 +137,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        one.fire(angle: Double(one.radians), vel: 100)
+        fire(angle: Double(one.radians), vel: 100, player: one)
     }
     
     override func update (_ currentTime: CFTimeInterval) {
@@ -219,7 +202,29 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     
-    
+    func fire(angle: Double, vel: Double, player: player){
+        player.setBullet()
+        addChild(player.bBullet)
+        let x = vel * cos(angle)
+        let y = vel * sin(angle)
+        let shotVec = CGVector(dx: x, dy: y)
+        player.bBullet.physicsBody?.applyImpulse(shotVec)
+        
+        let wait4 = SKAction.wait(forDuration: 4)
+        let reset = SKAction.run({
+            player.setBullet()
+        })
+        player.bBullet.run(SKAction.sequence([wait4, reset]))
+    }
+    func setArrow(player: player) {
+        player.arrow.setScale(0.5)
+        player.arrow.anchorPoint = CGPoint(x:0.5,y: 0)
+        player.arrow.position = CGPoint(x: player.tank.position.x, y: player.tank.position.y)
+        player.arrow.zPosition = 1
+        addChild(player.arrow)
+    }
     
     
 }
+
+
